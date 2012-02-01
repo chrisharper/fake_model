@@ -1,0 +1,23 @@
+# README
+
+fake_model allows you to replicate a non persisted ActiveRecord model
+with validations. This is usefull for cases where you want validations but
+do not need persistance. 
+
+# Usage
+    class person
+      include FakeModel
+      fake :name , :age
+      validates :name , :presence => true
+      validates :age , :presence => true
+    end
+
+    james = Peson.new :name => 'James' , :age => 40
+    james.valid? # true
+    Person.fake_attributes # [:name , :age]
+    james.attributes # {:name => 'James' , :age => 40}
+    james.age = 50 # true
+    james.age # 50
+
+
+All validations included in ActiveRecord are available.
