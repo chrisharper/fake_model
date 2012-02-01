@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.version     = FakeModel::VERSION
   s.authors     = ["Chris Harper"]
   s.email       = ["charper@branched.co.uk"]
-  s.homepage    = ""
-  s.summary     = %q{Creates fake ActiveRecord models with validations}
+  s.homepage    = "https://github.com/branched/fake_model"
+  s.summary     = %q{Creates fake ActiveRecord model with validations}
   s.description = %q{Allows you to create classes that have ActiveRecord validations and can be used in forms}
 
   s.rubyforge_project = "fake_model"
