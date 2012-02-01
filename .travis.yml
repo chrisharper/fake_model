@@ -1,0 +1,3 @@
+rvm:
+  - 1.9.2
+script: ruby test/unit/fake_model_test.rb
